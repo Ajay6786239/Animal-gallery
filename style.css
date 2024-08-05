@@ -1,0 +1,391 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.oot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFBA00;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px;
+}
+
+.animal {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.about p, .sidebar p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.about a, .sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about p:hover, .sidebar p:hover {
+    text-decoration: underline;
+}
+
+.threedot {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .threedot {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .about p {
+        display: none;
+    }
+}
+
+
+.sidebar {
+    width: 50%;
+    height: 100vh;
+    background-color: #592720;
+    position: fixed;
+    top: 0;
+    left: -70%;
+    transition: left 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.content {
+    color: white;
+    padding: 20px;
+}
+
+.xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://png.pngtree.com/background/20230424/original/pngtree-an-image-of-a-tiger-walking-through-the-forest-and-leaving-picture-image_2459646.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.topic {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .topic {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topic {
+        font-size: 1rem;
+        padding-top: 50px;
+    }
+}
+
+
+.this {
+    padding: 30px;
+    background-color: #f0f8ff;
+}
+
+.two {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.co {
+   display:flex;
+   overflow-x: auto;
+}
+.co::-webkit-scrollbar {
+    display: none;
+}
+.co .o{
+    display:flex;
+}
+.co .t{
+    display:flex;
+
+}
+
+.co p {
+    background-color: #00bfff;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    height:250px;
+    width:250px;
+    margin-bottom:20px;
+}
+
+@media screen and (max-width: 450px) {
+    .two {
+        font-size: 1.5rem;
+    }
+}
+
+
+.week {
+    padding: 30px;
+    background-color: #e6e6fa;
+    text-align: center;
+}
+
+.ek {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.tho {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px auto;
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.5rem;
+    color: #333;
+    border: 2px solid #FFD700;
+}
+
+.tho:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.theen {
+    font-family: "Finger Paint", sans-serif;
+    text-decoration: underline;
+}
+
+
+.bubble {
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.note {
+    padding: 10px;
+    background-color: #CD5C5C;
+    border-radius: 10px;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .img img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img img {
+        width: 100%;
+    }
+}
+
+
+.images {
+    background-color: #cbefff;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagehead {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width:100%;
+    height:auto;
+}
+
+.img1 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 720px) {
+    .img1 img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+.highlight {
+    background-color: #E6E6FA;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.highlight .em {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2.5rem;
+    color: #592720;
+    text-shadow: 2px 2px #FFD700;
+}
+
+.highlight img {
+    width:calc(50% - 1rem);
+    height:auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+}
+
+.highlight .grid {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .highlight .em {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .highlight .em {
+        font-size: 1.5rem;
+    }
+}
+
+
+.aboutred {
+    background-color: #F4F0E6;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.aboutred h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #8B0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutred p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.aboutred p::first-line {
+    font-weight: bold;
+}
+.gamehead{
+    font-family: "Permanent Marker", cursive;
+    text-decoration: underline;
+}
+.game .eee{
+    text-decoration: none;
+    font-size: 40px;
+    color:white;
+    
+    
+}
+.game button{
+    margin-top: 40px;
+    width:800px;
+    border-radius: 10px;
+    background-color: black;
+    
+    text-decoration: none;
+}
+.game{
+    text-align: center;
+   
+}
+
+.footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    margin-top:20px;
+    height:150px;
+   
+}
+@media screen and (max-width:820px){
+    .game button{
+        width:400px;
+    }
+}
+@media screen and (max-width:420px){
+    .game button{
+        width:300px;
+    }
+}
